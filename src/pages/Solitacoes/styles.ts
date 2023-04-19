@@ -6,6 +6,7 @@ export const Contrainer = styled.div `
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
 `;
 
 export const LoginWrap = styled.div`
@@ -64,6 +65,7 @@ export const DropDwonWrapper = styled.div`
   align-items: center;
   gap: 1rem;
 `;
+
 
 export const GapContainer = styled.div`
   display: flex;
