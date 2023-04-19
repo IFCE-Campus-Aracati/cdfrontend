@@ -46,7 +46,7 @@ export function Solitacoes(){
 
     return (
         <>
-        <Header />
+        <Header route="user"/>
         <Contrainer>
             <LoginWrap>
                 <GapContainer>

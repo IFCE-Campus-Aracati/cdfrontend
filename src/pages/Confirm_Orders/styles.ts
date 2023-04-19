@@ -6,6 +6,7 @@ export const Contrainer = styled.div `
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  padding: 1rem;
 `;
 
 export const LoginWrap = styled.div`
@@ -20,7 +21,7 @@ export const LoginWrap = styled.div`
 export const GapContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
   width: 100%;
 `;
 
@@ -52,7 +53,7 @@ export const TextLeft = styled.div`
   display: flex;
   justify-content: left;
   align-items: left;
-  margin-top: 5px;
+  /* margin-top: 5px; */
 `;
 
 export const TextReference = styled.span`
@@ -63,10 +64,26 @@ export const TextReference = styled.span`
     /* margin-bottom: 10px; */
 `;
 
+export const TextReferenceWrapper = styled.div`
+  width: 100%;
+  gap: 31rem;
+  display: flex; 
+  flex-direction: row;
+`;
+
 export const TextConfirm_Orders = styled.span`
     color: ${props=>props.theme.colors["text-dark"]};
     font-size: 45px;
     text-align: left;
     font-weight: bold;
     margin-bottom: 20px;  
+`;
+
+export const TurnoUrgenciaCorWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  /* align-items: center; */
+  gap: 24rem;
 `;
