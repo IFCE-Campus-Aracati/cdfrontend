@@ -5,7 +5,7 @@ interface InputProps {
 }
 
 export const Container = styled.div<InputProps>`
-    height: 60px;
+    height: 3rem;
     width: ${props => props.size === 'small' ? (`25%`) : (props.size === 'medium'? (`50%`):(`100%`))};
     background-color: ${props => props.theme.colors["background-green-light"]};
     border-radius: 5px;

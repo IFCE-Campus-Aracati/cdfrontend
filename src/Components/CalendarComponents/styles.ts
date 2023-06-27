@@ -14,23 +14,24 @@ export const InputCalendarioWrapper = styled.div<SelectProps>`
 `;
 
 export const CalendarioWrapper = styled.button`
-  font-size: 15px;
   color: ${props=>props.theme.colors["text-dark"]};
   border: none;
   display: block;
   width: 100%;
-  height: 60px;
+  height: 3rem;
   outline: none;
   cursor: pointer;
   background-color: transparent;
   position: relative;
+  color: #929292;
+  font-size: 1rem;
+  font-weight: 500;
 `;
 
 export const Calendario = styled(Calendar)`
     width: 100%;
     position: absolute;
     right: 0;
-    /* z-index: 9999; */
     background-color: ${props => props.theme.colors["background-green-light"]};
     border: none;
     border-bottom: solid 1px ${props => props.theme.colors["green-dark"]};

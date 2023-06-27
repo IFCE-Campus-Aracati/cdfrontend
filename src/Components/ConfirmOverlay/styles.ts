@@ -15,4 +15,11 @@ export const Content = styled.div`
     width: 45rem;
     height: 25rem;
     background-color: ${props => props.theme.colors["background-light"]};
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 5rem;
+    border-radius: 5px;
+    gap: 3rem;
 `;

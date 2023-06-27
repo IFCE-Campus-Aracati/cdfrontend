@@ -30,115 +30,57 @@ export const LoginWrap = styled.div`
   overflow: hidden;
   padding: 70px 55px 33px 55px;
   box-shadow: 0 5px 10px 0px rgba(0, 0, 0, 0.2) ;
-  display: flex;
-  flex-wrap: wrap; 
+  display: flex; 
   position: relative;
-  justify-content: center; 
-  align-items: center;  
+  flex-direction: column;
 `;
 
 export const LoginForm = styled.form`
   width: 100%;
 `;
 
-export const TextTitle = styled.div`
-  width: 100%;
+export const Title = styled.span`
   display: flex;
-  justify-content: left;
-  align-items: left;
-`; 
-export const LoginTitle = styled.span`
-  display: block;
-  font-size: 30px;
+  font-size: 2rem;
   color:  ${props=>props.theme.colors["text-dark"]};
-  line-height: 1.2;
   text-align: left;
   font-weight: bold;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 `;
 
-export const LoginTitleImg = styled.img`
-  width: 90px;
+export const RecoveryPass = styled.button`
+    margin-top: 2rem;
+    display: flex;
+    align-self: flex-end;
+    width: auto;
+    height: 1rem;
+    cursor: pointer;
+    background-color: transparent;
+
+    margin-bottom: 0.3rem;
 `;
 
-export const Input = styled.input`
-  font-size: 15px;
-  color: ${props=>props.theme.colors["text-dark"]};
-  border: none;
-  display: block;
+export const ButtonContainer = styled.div`
   width: 100%;
-  height: 60px;
-  background-color: ${props=>props.theme.colors["green-light"]};
-  margin-bottom: 40px;
-  border-radius: 5px;
-  border-bottom:1px solid ${props => props.theme.colors["green-dark"]};
-  padding-left: 10px; 
-  outline: none
-`;
-
-export const ContainerLoginButton = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
-  padding-bottom: 13px;
+  margin-top: 2rem;
 `;
 
-export const LoginButton = styled.button`
-  background-color: ${props=>props.theme.colors["green-dark"]};
-  color: ${props=>props.theme.colors["text-light"]};
-  width: 250px;
-  height: 60px;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  
-  :hover{
-        background-color: ${props => props.theme.colors['hover-green-dark']};
-        transition: 200ms;
+export const CreateAccount = styled.button`
+    margin-top: 1rem;
+    background: none;
+    color: ${props => props.theme.colors["text-dark"]};
+    font-weight: 600;
+    font-size: 1rem;
+
+    span{
+        font-size: 1rem;
+        color: ${props => props.theme.colors["green-dark"]};
+
+        :hover{
+            color: ${props => props.theme.colors["hover-green-dark"]};
+        }
     }
-`;
-
-export const TextCenter = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* margin-top: 5px; */
-  justify-content: right;
-  align-items: right;
-  
-`;
-
-export const Text1 = styled.span`
-  font-size: 16px;
-  color:  ${props=>props.theme.colors["text-dark"]};
-  line-height: 1.2;
-  padding-right: 5px;
-  /* position: absolute; */
-  text-decoration: none;
-`;
-export const Text2 = styled.p`
-  /* position: absolute; */
-  font-size: 16px;
-  color:  ${props=>props.theme.colors["green-dark"]};
-  line-height: 1.2;
-  text-decoration: none;
-  cursor: pointer;
-`;
-export const TextSenha = styled.div`
-  display: flex;
-  justify-content: right;
-  align-items: right;
-`; 
-
-export const ForgotPassword = styled.p`
-  /* display: flex; */
-  position: absolute;
-  top: 16rem;
-  text-align: right;
-  color: ${props=>props.theme.colors["text-dark"]};
-  cursor: pointer;
 `;

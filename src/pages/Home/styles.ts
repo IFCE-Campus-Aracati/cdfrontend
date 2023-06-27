@@ -9,11 +9,11 @@ export const HomeContainer = styled.div`
 
 export const HeaderContainer = styled.div`
     width: 100%;
-    height: 6.75rem;
+    height: 5.25rem;
     background-color: ${props => props.theme.colors["background-dark"]};
     display: flex;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 1rem;
     justify-content: space-between;
 `;
 
@@ -22,7 +22,7 @@ export const Body = styled.div`
     height: 100%;
     display: flex;
     flex-direction: row;
-    padding: 5.313rem 2rem;
+    padding: 4rem 10rem 0 10rem;
     position: relative;
 `;
 
@@ -54,48 +54,45 @@ export const Footer = styled.div`
     background-color: ${props => props.theme.colors['background-dark']};
     display: flex;
     align-items: center;
+    gap: 0.5rem;
     padding: 0 2rem;
+    font-size: 1rem;
+    font-weight: 500;
     color: #fff;
-    @media (max-width: 330px) {
-        margin-top: 3rem;
-    }
 `;
 
 export const TextContainer = styled.div`
-    max-width: 33.625rem;
+    max-width: 100%;
     height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 `;
 
 export const Title = styled.h1`
-    font-size: 42px;
-    font-weight: 500;
+    font-size: 2.625rem;
+    font-weight: bold;
     margin-bottom: 2rem;
-    word-break: break-all;
 `;
 
-export const Text = styled.p`
+export const Text = styled.h1`
     font-size: 24px;
     font-weight: 300;
-    word-break: break-all;
     margin-bottom: 3.25rem;
 `;
 
 export const Button = styled.button`
     max-width: 33.625rem;
-    height: 4.625rem;
+    max-height: 4rem;
     width: 100%;
+    height: 100%;
     background-color: ${props => props.theme.colors['green-dark']};
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     color: ${props => props.theme.colors['text-light']};
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 500;
     border-radius: 5px;
     :hover{
@@ -104,42 +101,81 @@ export const Button = styled.button`
     }
 `;
 
-export const LogoContainer = styled.div`
-    width: 10.625rem;
-    height: 4.375;
+export const LogoContainer = styled.button`
+    width: auto;
+    height: auto;
     color: #fff;
     font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 60px;
+    font-size: 24px;
+    background-color: transparent;
 `;
 
 export const HeaderButtonContainer = styled.div`
     width: auto;
     display: flex;
+    gap: 3rem;
     @media(max-width: 768px){
         display: none;
         
     }
 `;
 
+export const UserButtonContainer = styled.div`
+    width: auto;
+    display: flex;
+    gap: 1rem;
+`;
+
 export const HeaderButton = styled.button`
-    background-color: transparent;
-    border: none;
-    color: ${props => props.theme.colors["text-light"]};
-    font-size: 24px;
-    font-weight: 400;
-    margin-left: 2rem;
+    width: 7rem;
+    height: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    background-color: #FFF;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #56885E;
+    border-radius: 3.125rem;
+
     :hover{
-        color: ${props => props.theme.colors["hover-text-light"]};
-        transition: 200ms;
+        background-color: #56885E;
+        color: #FFF;
     }
-    @media(max-width: 768px){
-        margin: 0;
-        margin-top: 2rem;
-        
+
+    transition: 300ms;
+`;
+
+export const NewOrderButton = styled.button`
+    width: 10.813rem;
+    height: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    background-color: #FFF;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #56885E;
+    border-radius: 3.125rem;
+
+    :hover{
+        background-color: #56885E;
+        color: #FFF;
     }
+
+    .Icon{
+        color:"#56885E";
+        :hover{
+            color: #FFF;
+        }
+    }
+
+    transition: 300ms;
 `;
 
 export const MenuButton = styled.button`

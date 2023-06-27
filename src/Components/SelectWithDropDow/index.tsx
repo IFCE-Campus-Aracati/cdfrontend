@@ -1,3 +1,4 @@
+import { CaretDown } from "phosphor-react";
 import { Container, Select } from "./styles";
 interface DataProps{
     label: string,
@@ -8,11 +9,13 @@ interface DataProps{
 interface SelectProps {
     size: 'small' | 'medium' | 'large'
     data: Array<DataProps>
+    onChange?: (event: React.ChangeEvent<HTMLSelectElement>) => void;
 }
-export function SelectWithDropDow({size, data, ...rest}: SelectProps){
+export function SelectWithDropDow({size, data, onChange, ...rest}: SelectProps){
     return(
         <Container size={size} >
-            <Select {...rest} defaultValue="">
+            
+            <Select {...rest} defaultValue="" onChange={onChange} >
                 {data.map((value) =>(
                     <option 
                     key={value.value}
